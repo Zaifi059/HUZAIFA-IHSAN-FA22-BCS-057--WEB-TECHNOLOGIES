@@ -34,5 +34,3 @@ The assignment demonstrates the use of essential HTML elements and form controls
 This assignment helped me gain hands-on experience with foundational HTML components, structure, and semantic tags. It serves as a base for learning front-end web development.
 
 ---
-
-✅ *This project is for educational purposes only.*
