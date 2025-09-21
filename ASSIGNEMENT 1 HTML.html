@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 1 - Basic Tags and Forms</title>
+</head>
+<body>
+    <!-- Basic HTML Structure and Content -->
+    <h1>Welcome to My HTML Assignment</h1>
+    <h2>Learning Basic HTML Tags</h2>
+    <h3>This is a level 3 heading</h3>
+    
+    <p>This is a paragraph with <b>bold text</b>, <i>italic text</i>, and <u>underlined text</u>.</p>
+    
+    <p>Here's a line break:<br>
+    This text appears on a new line.</p>
+    
+    <hr>
+    
+    <!-- Lists Section -->
+    <h2>Ordered List Example</h2>
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+    
+    <h2>Unordered List Example</h2>
+    <ul>
+        <li>Bullet point one</li>
+        <li>Bullet point two</li>
+        <li>Bullet point three</li>
+    </ul>
+    
+    <hr>
+    
+    <!-- Table Section -->
+    <h2>Sample Table</h2>
+    <table border="1" style="border-collapse: collapse; width: 100%;">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>HUZAIFA IHSAN</td>
+            <td>25</td>
+            <td>VEHARI</td>
+        </tr>
+        <tr>
+            <td>SARMAD KHAN</td>
+            <td>30</td>
+            <td>MULTAN</td>
+        </tr>
+    </table>
+    
+    <hr>
+    
+    <!-- Forms Section -->
+    <h2>Form with GET Method</h2>
+    <form action="#" method="GET">
+        <h3>Search Form (GET Method)</h3>
+        <p>
+            <label for="search">Search:</label><br>
+            <input type="text" id="search" name="search" placeholder="Enter search term">
+        </p>
+        
+        <p>
+            <label for="category">Category:</label><br>
+            <select id="category" name="category">
+                <option value="">Select a category</option>
+                <option value="web">Web Development</option>
+                <option value="mobile">Mobile Apps</option>
+                <option value="design">Design</option>
+            </select>
+        </p>
+        
+        <p>
+            <label>Sort by:</label><br>
+            <input type="radio" id="date" name="sort" value="date">
+            <label for="date">Date</label><br>
+            <input type="radio" id="relevance" name="sort" value="relevance">
+            <label for="relevance">Relevance</label>
+        </p>
+        
+        <input type="submit" value="Search">
+    </form>
+    
+    <hr>
+    
+    <h2>Form with POST Method</h2>
+    <form action="#" method="POST">
+        <h3>Registration Form (POST Method)</h3>
+        <p>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required>
+        </p>
+        
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+        
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+        </p>
+        
+        <p>
+            <label>Interests (select all that apply):</label><br>
+            <input type="checkbox" id="html" name="interests" value="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css" name="interests" value="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="javascript" name="interests" value="javascript">
+            <label for="javascript">JavaScript</label>
+        </p>
+        
+        <p>
+            <label>Newsletter:</label><br>
+            <input type="radio" id="yes" name="newsletter" value="yes">
+            <label for="yes">Yes, send me updates</label><br>
+            <input type="radio" id="no" name="newsletter" value="no">
+            <label for="no">No, thanks</label>
+        </p>
+        
+        <input type="submit" value="Register">
+    </form>
+    
+    <hr>
+    
+    <footer>
+        <p><i>This HTML file demonstrates basic HTML tags and form elements.</i></p>
+    </footer>
+</body>
+</html>
