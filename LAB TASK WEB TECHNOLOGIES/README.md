@@ -20,5 +20,5 @@ The design includes data-visualization components (charts, tables) and a clean m
 ---
 
 ## 🏗 Project Structure (Example)
+<img width="1362" height="701" alt="image" src="https://github.com/user-attachments/assets/757cc6fa-6bd9-422c-bfb4-470ac4cbbf3b" />
 
-![Uploading image.png…]()
