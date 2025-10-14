@@ -21,3 +21,4 @@ The design includes data-visualization components (charts, tables) and a clean m
 
 ## 🏗 Project Structure (Example)
 
+![Uploading image.png…]()
