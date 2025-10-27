@@ -1,0 +1,19 @@
+PORTFOLIO IMAGE NAMING GUIDE
+=============================
+
+Name your images with these exact names and place them in this folder:
+
+1. tms.jpg (or .png)         - Transport Management System
+2. marquee.jpg               - Marquee Online Reservation
+3. ecommerce.jpg              - E-Commerce Mobile App
+4. restaurant.jpg             - Restaurant Booking System
+5. learning.jpg               - Online Learning Platform
+6. hospital.jpg               - Hospital Management System
+7. inventory.jpg              - Inventory Management System
+8. dashboard.jpg              - Social Media Dashboard
+9. taskmanager.jpg            - Task Management App
+
+OR use any names you want and update the HTML accordingly!
+
+Supported formats: .jpg, .jpeg, .png, .gif, .webp
+

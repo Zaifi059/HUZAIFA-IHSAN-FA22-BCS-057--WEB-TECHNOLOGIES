@@ -1,0 +1,85 @@
+🔧 FIX "SITE CANNOT BE REACHED" ERROR
+========================================
+
+✅ SOLUTION 1: Allow Firewall Access
+------------------------------------
+1. Press Windows Key + R
+2. Type: firewall.cpl
+3. Click "Allow an app through firewall"
+4. Click "Allow another app"
+5. Select Python
+6. Check both "Private" and "Public"
+7. Click OK
+
+✅ SOLUTION 2: Find Your Correct IP
+-----------------------------------
+The IP shown might be wrong. To find your correct IP:
+
+1. Open Command Prompt (Win + R, type: cmd)
+2. Type: ipconfig
+3. Look for "IPv4 Address" under your WiFi adapter
+4. Use that IP address!
+
+Example: 
+   IPv4 Address: 192.168.1.45
+   Use: http://192.168.1.45:8000/
+
+✅ SOLUTION 3: Use This Instead
+--------------------------------
+If nothing works, try these alternatives:
+
+1. Open index.html directly in mobile browser
+2. Use Chrome remote debugging
+3. Use USB debugging with Chrome DevTools
+
+✅ SOLUTION 4: Quick Test - Use Python's Simpler Server
+---------------------------------------------------------
+1. Open terminal in your project folder
+2. Type: python -m http.server 8000
+3. It will show your IP
+
+========================================
+STEP-BY-STEP INSTRUCTIONS
+========================================
+
+1️⃣  START THE SERVER:
+   - Double-click START-SERVER.bat
+   - OR run: python server.py
+
+2️⃣  FIND YOUR IP:
+   - Look at the terminal output
+   - Copy the IP (e.g., 192.168.1.XXX)
+
+3️⃣  ON YOUR PHONE:
+   - Connect to same WiFi
+   - Open Chrome/Safari
+   - Type: http://IP:8000/
+   - Example: http://192.168.1.45:8000/
+
+4️⃣  IF STILL NOT WORKING:
+   - Check Windows Firewall
+   - Make sure both devices on same network
+   - Try http://localhost:8000 on your computer first
+
+========================================
+ALTERNATIVE: VIEW DIRECTLY
+========================================
+
+Option A: Email to yourself
+1. Zip the entire project folder
+2. Email it to yourself
+3. Download on phone and open index.html
+
+Option B: Google Drive / Dropbox
+1. Upload project to cloud storage
+2. Download on phone
+3. Open index.html in browser
+
+Option C: Use VS Code Live Server
+1. Install Live Server extension
+2. Right-click index.html
+3. Click "Open with Live Server"
+4. Look for QR code to scan with phone
+
+========================================
+

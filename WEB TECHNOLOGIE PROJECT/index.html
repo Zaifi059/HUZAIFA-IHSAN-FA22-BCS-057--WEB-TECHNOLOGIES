@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huzaifa Ihsan - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom 3D Cursor -->
+    <div class="cursor-3d" id="cursor3d"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">Huzaifa Ihsan</div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="hero-animations">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+            <div class="floating-shape shape-6"></div>
+            <div class="floating-shape shape-7"></div>
+            <div class="floating-shape shape-8"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Web Developer</span> & Mobile Developer
+                </h1>
+                <p class="hero-subtitle">BS Computer Science Student at COMSATS University</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">My Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About Me</span>
+                    <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am <strong>Huzaifa Ihsan</strong>, a passionate web and mobile developer currently pursuing a BS in Computer Science at COMSATS University Vehari Campus (7th Semester). I specialize in building responsive web applications and cross-platform mobile apps.</p>
+                    <p>I am also serving as the Chief Operating Officer (COO) at URSOFT Software House, where I lead development teams and create innovative software solutions. My expertise includes Flutter, Dart, Python, and modern web technologies.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>7th</h3>
+                            <p>Semester</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>COO</h3>
+                            <p>URSOFT Software House</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>2022</h3>
+                            <p>Enrolled</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="images/profile.jpg" alt="Huzaifa Ihsan" class="profile-image">
+                        <div class="gradient-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Skills</span>
+                <h2 class="section-title">What I Do</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Responsive and interactive web applications built with modern technologies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Cross-platform mobile apps built with Flutter and Dart for iOS and Android.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="18" rx="2"></rect>
+                            <path d="M2 9h20M9 21V9"></path>
+                        </svg>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered designs that provide exceptional experiences and drive engagement.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        </svg>
+                    </div>
+                    <h3>Python Development</h3>
+                    <p>Backend services and automation solutions using Python programming language.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="4" y1="4" x2="20" y2="20"></line>
+                            <line x1="4" y1="20" x2="20" y2="4"></line>
+                        </svg>
+                    </div>
+                    <h3>Team Leadership</h3>
+                    <p>Managing development teams and ensuring quality delivery on all projects.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v4M12 18v4M4 12H2M22 12h-2M19.07 19.07l-2.83-2.83M19.07 4.93l-2.83 2.83M4.93 4.93l2.83 2.83M4.93 19.07l2.83-2.83"></path>
+                            <circle cx="12" cy="12" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3>Project Management</h3>
+                    <p>Coordinating projects from planning to delivery with strategic oversight.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">My Projects</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/tms.jpg" alt="Transport Management System" class="portfolio-bg-image" onerror="this.style.display='none';">
+                        <div class="portfolio-content">
+                            <div class="portfolio-badge">TMS</div>
+                            <div class="portfolio-title">Transport Management System</div>
+                            <div class="portfolio-tech">Flutter | Python | Firebase</div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Transport Management System (TMS)</h3>
+                            <p>Fleet management & tracking solution</p>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                        <div class="gradient-overlay gradient-1"></div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/marquee.jpg" alt="Marquee Online Reservation" class="portfolio-bg-image" onerror="this.style.display='none';">
+                        <div class="portfolio-content">
+                            <div class="portfolio-badge">Marquee</div>
+                            <div class="portfolio-title">Online Reservation</div>
+                            <div class="portfolio-tech">HTML | CSS | JavaScript</div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Marquee Online Reservation</h3>
+                            <p>Event booking platform</p>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                        <div class="gradient-overlay gradient-2"></div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/ecommerce.jpg" alt="E-Commerce Mobile App" class="portfolio-bg-image" onerror="this.style.display='none';">
+                        <div class="portfolio-content">
+                            <div class="portfolio-badge">E-Store</div>
+                            <div class="portfolio-title">E-Commerce App</div>
+                            <div class="portfolio-tech">Flutter | Dart | REST API</div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>E-Commerce Mobile App</h3>
+                            <p>Flutter cross-platform app</p>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                        <div class="gradient-overlay gradient-3"></div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/restaurant.jpg" alt="Restaurant Booking System" class="portfolio-bg-image" onerror="this.style.display='none';">
+                        <div class="portfolio-content">
+                            <div class="portfolio-badge">Reservify</div>
+                            <div class="portfolio-title">Restaurant Booking</div>
+                            <div class="portfolio-tech">React | Node.js | MongoDB</div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Restaurant Booking System</h3>
+                            <p>Table reservation platform</p>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                        <div class="gradient-overlay gradient-4"></div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/learning.jpg" alt="Online Learning Platform" class="portfolio-bg-image" onerror="this.style.display='none';">
+                        <div class="portfolio-content">
+                            <div class="portfolio-badge">EduLearn</div>
+                            <div class="portfolio-title">Learning Platform</div>
+                            <div class="portfolio-tech">Flutter | Firebase | Cloud</div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Online Learning Platform</h3>
+                            <p>Educational management system</p>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                        <div class="gradient-overlay gradient-5"></div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/hospital.jpg" alt="Hospital Management System" class="portfolio-bg-image" onerror="this.style.display='none';">
+                        <div class="portfolio-content">
+                            <div class="portfolio-badge">HealthCare</div>
+                            <div class="portfolio-title">Hospital System</div>
+                            <div class="portfolio-tech">Python | Django | SQLite</div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Hospital Management System</h3>
+                            <p>Patient & admin dashboard</p>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                        <div class="gradient-overlay gradient-6"></div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/inventory.jpg" alt="Inventory Management System" class="portfolio-bg-image" onerror="this.style.display='none';">
+                        <div class="portfolio-content">
+                            <div class="portfolio-badge">Inventory</div>
+                            <div class="portfolio-title">Stock Management</div>
+                            <div class="portfolio-tech">Python | Flask | MySQL</div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Inventory Management System</h3>
+                            <p>Stock tracking & analytics</p>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                        <div class="gradient-overlay gradient-1"></div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/dashboard.jpg" alt="Social Media Dashboard" class="portfolio-bg-image" onerror="this.style.display='none';">
+                        <div class="portfolio-content">
+                            <div class="portfolio-badge">SocialHub</div>
+                            <div class="portfolio-title">Media Dashboard</div>
+                            <div class="portfolio-tech">React | Chart.js | API</div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Social Media Dashboard</h3>
+                            <p>Analytics & engagement tool</p>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                        <div class="gradient-overlay gradient-2"></div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/taskmanager.jpg" alt="Task Management App" class="portfolio-bg-image" onerror="this.style.display='none';">
+                        <div class="portfolio-content">
+                            <div class="portfolio-badge">TaskFlow</div>
+                            <div class="portfolio-title">Task Manager</div>
+                            <div class="portfolio-tech">Flutter | Backend | Auth</div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Task Management App</h3>
+                            <p>Team collaboration platform</p>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                        <div class="gradient-overlay gradient-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>huzaifaihsan059@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <h3>Phone</h3>
+                    <p>+92 319 1744839</p>
+                </div>
+                <div class="info-item">
+                    <h3>Location</h3>
+                    <p>Vehari, Pakistan</p>
+                </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="file-upload" class="file-upload-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                            <span id="file-name">Upload Project Image/Document</span>
+                            <span class="upload-btn">Choose File</span>
+                        </label>
+                        <input type="file" id="file-upload" accept="image/*,.pdf,.doc,.docx" hidden>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Huzaifa Ihsan</h2>
+                    <p>BS Computer Science Student | COMSATS University</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>BS Computer Science</li>
+                        <li>COMSATS University Vehari</li>
+                        <li>7th Semester</li>
+                        <li>Registration: FA22-BCS-057</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Technical Skills</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">Flutter</a>
+                        <a href="#" class="social-icon">Dart</a>
+                        <a href="#" class="social-icon">Python</a>
+                        <a href="#" class="social-icon">Web Dev</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Huzaifa Ihsan - FA22-BCS-057 | Web Technologies Project | All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

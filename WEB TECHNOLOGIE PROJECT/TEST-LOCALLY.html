@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page - Open on Mobile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        
+        .ip-display {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 18px;
+            color: #667eea;
+            font-weight: bold;
+            text-align: center;
+            word-break: break-all;
+        }
+        
+        .instructions {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #4caf50;
+        }
+        
+        .instructions h2 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .instructions ol {
+            margin-left: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .status {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        
+        .status.success {
+            background: #c8e6c9;
+            color: #2e7d32;
+        }
+        
+        .status.error {
+            background: #ffcdd2;
+            color: #c62828;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📱 Mobile Testing Setup</h1>
+        
+        <div class="ip-display" id="ip-display">
+            Loading IP Address...
+        </div>
+        
+        <div class="instructions">
+            <h2>🔗 Steps to Connect:</h2>
+            <ol>
+                <li>Make sure your phone is on the same WiFi</li>
+                <li>Copy the IP address above</li>
+                <li>Open mobile browser</li>
+                <li>Type: <code>http://IP:8000</code></li>
+            </ol>
+        </div>
+        
+        <div id="status" class="status success" style="display: none;"></div>
+        
+        <a href="index.html" class="btn">Open Main Site →</a>
+    </div>
+    
+    <script>
+        // Get local IP
+        async function getLocalIP() {
+            const pc = new RTCPeerConnection({iceServers: []});
+            const offer = await pc.createOffer();
+            await pc.setLocalDescription(offer);
+            
+            return new Promise((resolve) => {
+                pc.onicecandidate = (event) => {
+                    if (event.candidate) {
+                        const candidate = event.candidate.candidate;
+                        const ipRegex = /([0-9]{1,3}(\.[0-9]{1,3}){3})/;
+                        const ipMatch = candidate.match(ipRegex);
+                        if (ipMatch) {
+                            pc.close();
+                            resolve(ipMatch[1]);
+                        }
+                    }
+                };
+            });
+        }
+        
+        getLocalIP().then(ip => {
+            document.getElementById('ip-display').textContent = ip + ':8000';
+        }).catch(() => {
+            document.getElementById('ip-display').textContent = 'Unable to detect IP';
+        });
+        
+        // Test if server is running
+        fetch('/')
+            .then(() => {
+                document.getElementById('status').textContent = '✅ Server is running!';
+                document.getElementById('status').classList.add('success');
+                document.getElementById('status').style.display = 'block';
+            })
+            .catch(() => {
+                document.getElementById('status').textContent = '❌ Server not running. Start server.py first!';
+                document.getElementById('status').classList.add('error');
+                document.getElementById('status').style.display = 'block';
+            });
+    </script>
+</body>
+</html>
+
