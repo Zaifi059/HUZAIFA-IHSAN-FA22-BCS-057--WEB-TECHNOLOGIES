@@ -7,6 +7,7 @@
   <b>BS Computer Science — 7th Semester</b> <br>
   <b>Instructor:</b> Sir Rizwan <br>
   <b>Course:</b> Web Technologies <br>
+<b> https://web-project-documentation.netlify.app/ <br>
 </p>
 
 ---
